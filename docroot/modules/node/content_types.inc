@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Content type editing user interface.
+ * Content type editing UI.
  */
 
 /**
@@ -255,11 +255,11 @@ function _node_characters($length) {
  */
 function node_type_form_validate($form, &$form_state) {
   $type = new stdClass();
-  $type->type = $form_state['values']['type'];
+  $type->type = trim($form_state['values']['type']);
   $type->name = trim($form_state['values']['name']);
 
   // Work out what the type was before the user submitted this form
-  $old_type = $form_state['values']['old_type'];
+  $old_type = trim($form_state['values']['old_type']);
 
   $types = node_type_get_names();
 
@@ -288,7 +288,7 @@ function node_type_form_submit($form, &$form_state) {
 
   $type = node_type_set_defaults();
 
-  $type->type = $form_state['values']['type'];
+  $type->type = trim($form_state['values']['type']);
   $type->name = trim($form_state['values']['name']);
   $type->orig_type = trim($form_state['values']['orig_type']);
   $type->old_type = isset($form_state['values']['old_type']) ? $form_state['values']['old_type'] : $type->type;
@@ -388,7 +388,8 @@ function node_node_type_update($info) {
 }
 
 /**
- * Resets relevant fields of a module-defined node type to their default values.
+ * Resets all of the relevant fields of a module-defined node type to their
+ * default values.
  *
  * @param $type
  *   The node type to reset. The node type is passed back by reference with its
@@ -409,8 +410,6 @@ function node_type_reset($type) {
 
 /**
  * Menu callback; delete a single content type.
- *
- * @ingroup forms
  */
 function node_type_delete_confirm($form, &$form_state, $type) {
   $form['type'] = array('#type' => 'value', '#value' => $type->type);
@@ -431,8 +430,6 @@ function node_type_delete_confirm($form, &$form_state, $type) {
 
 /**
  * Process content type delete confirm submissions.
- *
- * @see node_type_delete_confirm()
  */
 function node_type_delete_confirm_submit($form, &$form_state) {
   node_type_delete($form_state['values']['type']);

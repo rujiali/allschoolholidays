@@ -395,7 +395,7 @@ function menu_edit_item_validate($form, &$form_state) {
     else {
       unset($item['options']['fragment']);
     }
-    if (isset($parsed_link['path']) && $item['link_path'] != $parsed_link['path']) {
+    if ($item['link_path'] != $parsed_link['path']) {
       $item['link_path'] = $parsed_link['path'];
     }
   }
@@ -512,7 +512,8 @@ function menu_delete_menu_page($menu) {
   // System-defined menus may not be deleted.
   $system_menus = menu_list_system_menus();
   if (isset($system_menus[$menu['menu_name']])) {
-    return MENU_ACCESS_DENIED;
+    drupal_access_denied();
+    return;
   }
   return drupal_get_form('menu_delete_menu_confirm', $menu);
 }
@@ -621,7 +622,8 @@ function menu_item_delete_page($item) {
   // Links defined via hook_menu may not be deleted. Updated items are an
   // exception, as they can be broken.
   if ($item['module'] == 'system' && !$item['updated']) {
-    return MENU_ACCESS_DENIED;
+    drupal_access_denied();
+    return;
   }
   return drupal_get_form('menu_item_delete_form', $item);
 }
