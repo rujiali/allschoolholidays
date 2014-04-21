@@ -1,7 +1,0 @@
-/* Override region-content and sidebar-first from screen.css */
-.region-content-wrapper {
-  left: 0;
-}
-.region-sidebar-first {
-  left: 0;
-}
