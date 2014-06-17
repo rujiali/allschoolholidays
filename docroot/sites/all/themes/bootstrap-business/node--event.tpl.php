@@ -25,6 +25,9 @@
       hide($content['field_tags']);
       print render($content);
     ?>
+    <div class="highlighted-block">
+      <?php print '<p><a class="btn btn-block btn-lg" href="/contact-event?email=' . $node->field_event_email[LANGUAGE_NONE][0]['email'] . '">Contact Event</a></p>'; ?> 
+    </div>
   </div>
 
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
