@@ -26,7 +26,7 @@
       print render($content);
     ?>
     <div class="highlighted-block">
-      <?php print '<p><a class="btn btn-block btn-lg" href="/contact-event?email=' . $node->field_event_email[LANGUAGE_NONE][0]['email'] . '">Contact Event</a></p>'; ?> 
+      <?php print '<p><a class="btn btn-block btn-lg" href="/contact-event?email=' . $node->field_event_email[LANGUAGE_NONE][0]['email'] . '">Contact Organiser</a></p>'; ?> 
     </div>
   </div>
 
