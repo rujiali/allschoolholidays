@@ -1,1 +1,40 @@
 /* Custom CSS overrides */
+.isotope-filters {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.isotope-filters > li {
+  margin-left: 2px;
+  float: left;
+  list-style-type: none;
+  position: relative;
+  display: block;
+}
+
+.isotope-filters > li >a {
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #5fb336;
+  text-decoration: none;
+}
+
+.isotope-filters > li > a:hover {
+  background-color: #b0bdc9;
+}
+.isotope-filters > li > a.selected, 
+.isotope-filters > li > a.selected:hover,
+.isotope-filters > li > a.selected:focus {
+  color: #fff;
+  background-color: #5fb336;
+}
+
+.isotope-element a {
+  color: #444!important;
+}
+
+.isotope-element {
+  padding: 3px;
+}
