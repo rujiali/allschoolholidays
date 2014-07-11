@@ -17,7 +17,7 @@
   position: relative;
   display: block;
   padding: 10px 15px;
-  color: #5fb336;
+  color: #669FCC;
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@
 .isotope-filters > li > a.selected:hover,
 .isotope-filters > li > a.selected:focus {
   color: #fff;
-  background-color: #5fb336;
+  background-color: #669FCC;
 }
 
 .isotope-element a {
@@ -180,5 +180,25 @@ footer a {
 .front .region-content .views-row {
   margin: 10px;
   padding: 10px;
-  border-bottom: 1px dotted #585f7e;
+}
+
+.front tr {
+  border-bottom: 3px dotted #7ca8de!important;
+}
+
+.front table {
+  border: 0px;
+}
+
+#search-block-form input.form-text,
+textarea.form-textarea, select {
+  background-color: #FCFCFC;
+  /**border: 2px solid #669FCC;**/
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: none;
+  color: #1AA28E;
+  font-weight: bold;
+  min-height: 50px;
+  padding: 14px;
+  width: 100%;
 }
