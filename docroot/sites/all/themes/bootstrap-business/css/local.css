@@ -65,3 +65,120 @@
   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+
+#header-top {
+  background-image: url('../images/local/top-bg.gif');
+  background-size: 100%;
+  border-bottom: 0px;
+}
+
+#header-top a {
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+#header {
+  background-image: url('../images/local/header-bg.gif');
+  background-size: 100%;
+}
+
+#site-slogan {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #585f7e;
+}
+
+#main-navigation {
+  background-image: url('../images/local/mainnav-bg.gif');
+  background-size: 100%;
+  margin-top: 10px;
+}
+
+#main-navigation ul.menu li a {
+  font-size: 10pt;
+  font-weight: bold;
+  color: white;
+}
+
+#sidebar-second {
+  background-image: url('../images/local/rightside-bg.gif');
+  background-size: 100%;
+  padding: 20px;
+}
+
+#sidebar-second h2 {
+  color: white;
+}
+
+#sidebar-second .block {
+  border-bottom: 1px dotted white;
+}
+
+#sidebar-second .content a {
+  color: #677fa0;
+  font-size: 9pt;
+}
+
+a.btn {
+  background-color: #677fa0!important;
+  color: white!important;
+}
+
+a.btn:hover {
+  background: #88c2e7!important;
+}
+
+#block-search-form {
+  font-family: maryland;
+}
+
+footer {
+  background-image: url('../images/local/mainnav-bg.gif');
+  background-size: 100%;
+}
+
+footer a {
+  color: white!important;
+}
+
+.front .region-content .views-field-title {
+  font-family: maryland;
+  font-weight: bold;
+  font-size: 11pt;
+  background-color: #12a79d;
+  padding: 10px;
+  width: 250px;
+}
+
+.front .region-content .views-field-field-event-logo {
+  float: left;
+  width: 250px;
+}
+.front .region-content .views-field-field-event-logo a {
+  font-family: maryland;
+  font-weight: bold;
+  font-size: 11pt;
+  background-color: #12a79d;
+  padding: 8px;
+  color: white;
+  display: block;
+}
+
+
+.front .region-content .views-field-body {
+  font-size: 8pt;
+}
+
+.front .region-content .views-field-body a {
+  font-family: maryland;
+  font-weight: bold;
+  font-size: 11pt;
+  color: #585f7e;
+}
+
+.front .region-content .views-row {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px dotted #585f7e;
+}
