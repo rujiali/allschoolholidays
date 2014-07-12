@@ -193,7 +193,7 @@ footer a {
 #search-block-form input.form-text,
 textarea.form-textarea, select {
   background-color: #FCFCFC;
-  /**border: 2px solid #669FCC;**/
+  border: 1px solid #1AA28E;
   border-radius: 3px 3px 3px 3px;
   box-shadow: none;
   color: #1AA28E;
@@ -201,4 +201,24 @@ textarea.form-textarea, select {
   min-height: 50px;
   padding: 14px;
   width: 100%;
+}
+
+.view-calendar a {
+  color: black;
+}
+
+.view-calendar ul.pager {
+  overflow: visible;
+  display: block;
+}
+
+.view-calendar ul.pager a {
+  display: inline;
+  padding: 0px;
+  background: none;
+  border: 0px;
+}
+
+.view-calendar ul.pager a:hover {
+  background: none;
 }
