@@ -288,6 +288,7 @@
 
                 <?php if ($page['sidebar_second']):?>
                 <aside class="<?php print $sidebar_grid_class; ?>">
+                  <div id="frisbee"><img src="sites/all/themes/bootstrap-business/images/local/Frisbeerope.png"></div>
                     <!--#sidebar-second-->
                     <section id="sidebar-second" class="sidebar clearfix">
                     <?php print render($page['sidebar_second']); ?>

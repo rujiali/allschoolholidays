@@ -222,3 +222,11 @@ textarea.form-textarea, select {
 .view-calendar ul.pager a:hover {
   background: none;
 }
+
+#frisbee {
+  max-width: 100%;
+  background: -webkit-linear-gradient(#f0f0f0, #88c2e7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f0f0f0, #88c2e7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f0f0f0, #88c2e7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f0f0f0, #88c2e7); /* Standard syntax */
+}
