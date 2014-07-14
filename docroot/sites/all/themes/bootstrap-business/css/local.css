@@ -153,7 +153,7 @@ footer a {
 
 .front .region-content .views-field-field-event-logo {
   float: left;
-  width: 250px;
+  width: 100%;
 }
 .front .region-content .views-field-field-event-logo a {
   font-family: maryland;
