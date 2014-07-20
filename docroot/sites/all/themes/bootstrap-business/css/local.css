@@ -204,7 +204,7 @@ footer a {
   padding: 10px;
 }
 
-.front tr {
+.front .views-row {
   border-bottom: 3px dotted #7ca8de!important;
 }
 
