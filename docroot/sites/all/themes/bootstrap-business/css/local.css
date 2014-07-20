@@ -159,33 +159,40 @@ footer a {
   font-size: 11pt;
   background-color: #12a79d;
   padding: 10px;
-  width: 250px;
+  width: 100%;
 }
 
 .front .region-content .views-field-field-event-logo {
   float: left;
-  width: 100%;
+  /** width: 100%; **/
 }
 
 .front .region-content .views-field-field-event-logo img {
   max-width: 250px;
+  width: 250px;
+  margin-right: 10px;
 }
 
-.front .region-content .views-field-field-event-logo a {
+.front .region-content .views-field-title a {
   font-family: maryland;
   font-weight: bold;
   font-size: 11pt;
   background-color: #12a79d;
-  padding: 8px;
   color: white;
   display: block;
+  text-align: center;
 }
 
 .front .region-content .views-field-body {
   font-size: 9.5pt;
+  margin-top: 10px;
 }
 
-.front .region-content .views-field-body a {
+.front .region-content .views-field-view-node {
+  text-align: right;
+}
+
+.front .region-content .views-field-view-node a {
   font-family: maryland;
   font-weight: bold;
   font-size: 11pt;
