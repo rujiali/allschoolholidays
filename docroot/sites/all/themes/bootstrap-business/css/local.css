@@ -260,6 +260,7 @@ textarea.form-textarea, select {
 .responsive-menus.responsified span.toggler {
   background: inherit;
   box-shadow: none;
+  text-align: left;
 }
 
 .responsive-menus.responsified .responsive-menus-simple {
