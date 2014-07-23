@@ -168,8 +168,8 @@ footer a {
 }
 
 .region-content .views-field-field-event-logo img {
-  max-width: 250px;
-  width: 250px;
+  max-width: 320px;
+  width: 320px;
   margin-right: 10px;
 }
 
@@ -211,7 +211,6 @@ footer a {
 #search-block-form input.form-text,
 textarea.form-textarea, select {
   background-color: #FCFCFC;
-  border: 1px solid #1AA28E;
   border-radius: 3px 3px 3px 3px;
   box-shadow: none;
   color: #1AA28E;
@@ -266,4 +265,8 @@ textarea.form-textarea, select {
 .responsive-menus.responsified .responsive-menus-simple {
   background: #669FCC;
   box-shadow: none;
+}
+
+.chosen-container-active .chosen-choices {
+  border: 1px solid #1aa28e;
 }
