@@ -280,3 +280,8 @@ textarea.form-textarea, select {
 .views-exposed-widget {
   width: 100%;
 }
+
+.views-submit-button,
+.views-reset-button {
+  width: 100px!important;
+}
