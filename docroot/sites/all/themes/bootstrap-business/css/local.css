@@ -270,4 +270,13 @@ textarea.form-textarea, select {
 
 .chosen-container-active .chosen-choices {
   border: 1px solid #1aa28e;
+  width: 100%;
+}
+
+.chosen-container {
+  width: 100%!important;
+}
+
+.views-exposed-widget {
+  width: 100%;
 }
