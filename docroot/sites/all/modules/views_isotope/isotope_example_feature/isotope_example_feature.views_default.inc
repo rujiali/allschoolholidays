@@ -58,22 +58,9 @@ function isotope_example_feature_views_default_views() {
   $handler->display->display_options['fields']['field_tags']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_tags']['element_class'] = 'isotope-filter';
   $handler->display->display_options['fields']['field_tags']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_tags']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_tags']['delta_offset'] = '0';
-  /* Field: Content: Post date */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'node';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['element_type'] = 'div';
-  $handler->display->display_options['fields']['created']['element_class'] = 'isotope-sort post-date';
-  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'U';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
@@ -85,6 +72,11 @@ function isotope_example_feature_views_default_views() {
   $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

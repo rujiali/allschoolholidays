@@ -9,15 +9,21 @@
 
 <div class="isotope-options">
   <ul class="isotope-sort option-set clearfix" data-option-key="sortBy">
-  <?php
-    $count = 0;
-    foreach ($rows as $id => $row):
-  ?> 
-    <li><a class="sortbutton" data-option-value="<?php print $isotope_sort_classes[$count]; ?>" href="#sortBy=<?php print $isotope_sort_classes[$count]; ?>"><?php print trim($row); ?></a></li>
-  <?php
-      $count++;
-    endforeach;
-  ?>
+  
+    <?php foreach ($rows as $id => $row): ?>
+      
+      <?php
+        // Sanitize sort option value.
+        $dataoption = trim(strip_tags(strtolower($row)));
+        $dataoption = str_replace(' ', '-', $dataoption);
+        $dataoption = str_replace('/', '-', $dataoption);
+        $dataoption = str_replace('&amp;', '', $dataoption);
+      ?>
+          
+      <li><a class="sortbutton" data-option-value="<?php print $dataoption; ?>" href="#sortBy=<?php print $dataoption; ?>"><?php print trim($row); ?></a></li>
+      
+    <?php endforeach; ?>
+  
   </ul>
 	<ul id="isotope-sort-direction" class="option-set clearfix" data-option-key="sortAscending">
     <li><a class="sortbutton" href="#sortAscending=true" data-option-value="true" class="selected"><?php print t('Ascending'); ?></a></li>
