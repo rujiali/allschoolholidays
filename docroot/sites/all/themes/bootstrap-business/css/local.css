@@ -144,7 +144,7 @@ a.btn:hover {
   font-family: maryland;
 }
 
-#block-search-form input {
+#block-search-form .form-type-textfield input {
   border: 2px solid #669FCC;
 }
 
@@ -292,7 +292,7 @@ textarea.form-textarea, select {
 
 .views-exposed-widget #edit-field-age {
   min-height: 29px;
-  paddong: 0px;
+  padding: 0px;
 }
 
 .views-submit-button,
@@ -300,6 +300,6 @@ textarea.form-textarea, select {
   width: 100px!important;
 }
 
-.search-result .title {
+.search-result .title a {
   color: #669FCC;
 }
