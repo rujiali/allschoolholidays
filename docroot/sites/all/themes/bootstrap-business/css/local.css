@@ -144,6 +144,10 @@ a.btn:hover {
   font-family: maryland;
 }
 
+#block-search-form input {
+  border: 2px solid #669FCC;
+}
+
 footer {
   background-image: url('../images/local/mainnav-bg.gif');
   background-size: 100%;
@@ -203,6 +207,11 @@ footer a {
 .region-content .views-row {
   margin: 10px;
   padding: 10px;
+}
+
+.region-content .field-type-taxonomy-term-reference {
+  width: 100%;
+  padding-bottom: 4px;
 }
 
 .views-row {
@@ -281,7 +290,16 @@ textarea.form-textarea, select {
   width: 100%;
 }
 
+.views-exposed-widget #edit-field-age {
+  min-height: 29px;
+  paddong: 0px;
+}
+
 .views-submit-button,
 .views-reset-button {
   width: 100px!important;
+}
+
+.search-result .title {
+  color: #669FCC;
 }
