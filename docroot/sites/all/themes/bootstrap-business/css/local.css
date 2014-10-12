@@ -106,6 +106,10 @@
   color: white;
 }
 
+#main-navigation #main-navigation-inside .toggler {
+  color: #fff!important;
+}
+
 #sidebar-second {
   background-image: url('../images/local/rightside-bg.gif');
   background-size: 100%;
@@ -308,7 +312,7 @@ textarea.form-textarea, select {
   display: none;
 }
 
-#block-block-6 a {
+#block-block-6 .content a {
   display: block;
   width: 400px;
   margin: auto;
@@ -319,7 +323,7 @@ textarea.form-textarea, select {
   border-radius: 10px;
 }
 
-#block-block-6 a:hover {
+#block-block-6 .content a:hover {
   background-color: #428bca;
 }
 
