@@ -70,6 +70,16 @@
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+.field-name-field-event-logo {
+  float: right;
+  max-width: 300px;
+}
+
+.field-name-field-event-logo img {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
 #header-top {
   background: url('../images/local/top-bg.gif') fixed;
   background-size: 150%;
@@ -332,6 +342,9 @@ textarea.form-textarea, select {
   #header {
     min-height: 200px;
   }
+  #header-top {
+    background-size: 200%;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -341,6 +354,6 @@ textarea.form-textarea, select {
     padding: 20px;
   }
   #header-top {
-    background-size: 200%;
+    background-size: 300%;
   }
 }
