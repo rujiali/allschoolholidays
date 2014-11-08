@@ -40,8 +40,7 @@
 }
 
 #block-menu-menu-top-menu ul {
-  width: 290px;
-  float: right;
+  text-align: center;
 }
 
 #edit-field-event-age-from-wrapper,
@@ -72,8 +71,8 @@
 }
 
 #header-top {
-  background-image: url('../images/local/top-bg.gif');
-  background-size: 100%;
+  background: url('../images/local/top-bg.gif') fixed;
+  background-size: 150%;
   border-bottom: 0px;
 }
 
@@ -84,8 +83,10 @@
 }
 
 #header {
-  background-image: url('../images/local/header-bg.gif');
-  background-size: 100%;
+  background: url('../images/local/header-bg.gif') fixed;
+  background-size: 200%;
+  min-height: 320px;
+  padding-top: 20px;
 }
 
 #site-slogan {
@@ -327,3 +328,19 @@ textarea.form-textarea, select {
   background-color: #428bca;
 }
 
+@media all and (max-width: 768px) {
+  #header {
+    min-height: 200px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #header {
+    min-height: 100px;
+    background-size: 300%;
+    padding: 20px;
+  }
+  #header-top {
+    background-size: 200%;
+  }
+}
